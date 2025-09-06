@@ -8,3 +8,8 @@ def basic_encrypt(message):
     def basic_decrypt(encrypted, key):
     f = Fernet(key)
     return f.decrypt(encrypted).decode()
+    def basic_encrypt(message):
+    """Encrypt message using Fernet for FHE simulation."""
+    key = Fernet.generate_key()
+    f = Fernet(key)
+    return f.encrypt(str(message).encode()), key  # Return key too
