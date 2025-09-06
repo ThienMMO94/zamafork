@@ -178,3 +178,9 @@ This software is distributed under the **BSD-3-Clause-Clear** license. Read [thi
 <p align="right">
   <a href="#about" > ↑ Back to top </a>
 </p>
+# My FHE Crypto Project for Zama
+
+This project simulates basic FHE encryption for blockchain applications like Zama.
+
+## Usage
+Run `python init_script.py`
