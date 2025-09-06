@@ -5,3 +5,6 @@ def basic_encrypt(message):
     key = Fernet.generate_key()
     f = Fernet(key)
     return f.encrypt(str(message).encode())
+    def basic_decrypt(encrypted, key):
+    f = Fernet(key)
+    return f.decrypt(encrypted).decode()
