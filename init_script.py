@@ -4,4 +4,4 @@ from cryptography.fernet import Fernet
 def basic_encrypt(message):
     key = Fernet.generate_key()
     f = Fernet(key)
-    return f.encrypt(message.encode())
+    return f.encrypt(str(message).encode())
